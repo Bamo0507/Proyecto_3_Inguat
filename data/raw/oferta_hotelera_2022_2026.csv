@@ -1,0 +1,331 @@
+anio,trimestre,departamento,tipo_alojamiento,establecimientos,habitaciones,plazas_cama
+2022,4,Alta Verapaz,Hospedaje,84,1214,3178
+2022,4,Alta Verapaz,Hotel,73,1341,3893
+2022,4,Alta Verapaz,Pensión,28,412,1002
+2022,4,Baja Verapaz,Hospedaje,26,357,846
+2022,4,Baja Verapaz,Hotel,16,310,951
+2022,4,Baja Verapaz,Pensión,11,196,429
+2022,4,Chimaltenango,Hospedaje,50,516,1235
+2022,4,Chimaltenango,Hotel,19,421,1180
+2022,4,Chimaltenango,Pensión,1,2,4
+2022,4,Chiquimula,Hospedaje,118,2272,6219
+2022,4,Chiquimula,Hotel,45,1337,4367
+2022,4,Chiquimula,Pensión,15,299,789
+2022,4,El Progreso,Hospedaje,15,152,376
+2022,4,El Progreso,Hotel,9,143,461
+2022,4,El Progreso,Pensión,4,52,172
+2022,4,Escuintla,Hospedaje,85,1135,2957
+2022,4,Escuintla,Hotel,58,1407,4613
+2022,4,Escuintla,Pensión,16,253,669
+2022,4,Guatemala,Hospedaje,410,5326,11782
+2022,4,Guatemala,Hotel,90,4588,14771
+2022,4,Guatemala,Pensión,34,576,1268
+2022,4,Huehuetenango,Hospedaje,167,2675,5523
+2022,4,Huehuetenango,Hotel,80,1820,4836
+2022,4,Huehuetenango,Pensión,19,289,682
+2022,4,Izabal,Hospedaje,89,1297,4892
+2022,4,Izabal,Hotel,64,1408,4524
+2022,4,Izabal,Pensión,18,252,742
+2022,4,Jalapa,Hospedaje,24,386,864
+2022,4,Jalapa,Hotel,11,251,695
+2022,4,Jalapa,Pensión,3,33,98
+2022,4,Jutiapa,Hospedaje,48,702,1654
+2022,4,Jutiapa,Hotel,24,514,1375
+2022,4,Jutiapa,Pensión,4,45,146
+2022,4,Petén,Hospedaje,157,2345,6325
+2022,4,Petén,Hotel,83,1540,4668
+2022,4,Petén,Pensión,16,219,684
+2022,4,Quetzaltenango,Hospedaje,112,1500,3646
+2022,4,Quetzaltenango,Hotel,90,2228,6665
+2022,4,Quetzaltenango,Pensión,24,395,897
+2022,4,Quiché,Hospedaje,114,1688,3898
+2022,4,Quiché,Hotel,46,904,2445
+2022,4,Quiché,Pensión,12,171,334
+2022,4,Retalhuleu,Hospedaje,33,416,1215
+2022,4,Retalhuleu,Hotel,42,876,3025
+2022,4,Retalhuleu,Pensión,7,79,198
+2022,4,Sacatepéquez,Hospedaje,83,836,2292
+2022,4,Sacatepéquez,Hotel,109,1969,6333
+2022,4,Sacatepéquez,Pensión,23,235,781
+2022,4,San Marcos,Hospedaje,165,2190,4910
+2022,4,San Marcos,Hotel,47,876,2240
+2022,4,San Marcos,Pensión,18,273,619
+2022,4,Santa Rosa,Hospedaje,46,636,1644
+2022,4,Santa Rosa,Hotel,45,841,2696
+2022,4,Santa Rosa,Pensión,6,109,327
+2022,4,Sololá,Hospedaje,85,830,2188
+2022,4,Sololá,Hotel,60,989,3037
+2022,4,Sololá,Pensión,5,58,135
+2022,4,Suchitepéquez,Hospedaje,54,818,1671
+2022,4,Suchitepéquez,Hotel,17,415,1415
+2022,4,Suchitepéquez,Pensión,8,144,346
+2022,4,Totonicapán,Hospedaje,31,390,905
+2022,4,Totonicapán,Hotel,9,151,457
+2022,4,Totonicapán,Pensión,0,0,0
+2022,4,Zacapa,Hospedaje,15,255,657
+2022,4,Zacapa,Hotel,20,730,2971
+2022,4,Zacapa,Pensión,5,104,253
+2023,4,Alta Verapaz,Hospedaje,87,1235,3156
+2023,4,Alta Verapaz,Hotel,72,1384,4041
+2023,4,Alta Verapaz,Pensión,28,428,1038
+2023,4,Baja Verapaz,Hospedaje,29,387,928
+2023,4,Baja Verapaz,Hotel,16,330,1009
+2023,4,Baja Verapaz,Pensión,11,196,429
+2023,4,Chimaltenango,Hospedaje,51,525,1267
+2023,4,Chimaltenango,Hotel,18,413,1154
+2023,4,Chimaltenango,Pensión,2,12,26
+2023,4,Chiquimula,Hospedaje,122,2371,6572
+2023,4,Chiquimula,Hotel,43,1287,4286
+2023,4,Chiquimula,Pensión,15,299,789
+2023,4,El Progreso,Hospedaje,16,169,426
+2023,4,El Progreso,Hotel,11,182,589
+2023,4,El Progreso,Pensión,2,15,45
+2023,4,Escuintla,Hospedaje,89,1187,3090
+2023,4,Escuintla,Hotel,64,1475,4879
+2023,4,Escuintla,Pensión,18,302,816
+2023,4,Guatemala,Hospedaje,411,5295,11720
+2023,4,Guatemala,Hotel,84,4375,14055
+2023,4,Guatemala,Pensión,34,573,1262
+2023,4,Huehuetenango,Hospedaje,173,2735,5735
+2023,4,Huehuetenango,Hotel,78,1757,4689
+2023,4,Huehuetenango,Pensión,19,290,686
+2023,4,Izabal,Hospedaje,86,1240,4675
+2023,4,Izabal,Hotel,64,1405,4596
+2023,4,Izabal,Pensión,17,253,743
+2023,4,Jalapa,Hospedaje,26,432,969
+2023,4,Jalapa,Hotel,12,270,743
+2023,4,Jalapa,Pensión,3,33,98
+2023,4,Jutiapa,Hospedaje,48,720,1649
+2023,4,Jutiapa,Hotel,27,605,1603
+2023,4,Jutiapa,Pensión,5,59,181
+2023,4,Petén,Hospedaje,145,2180,5987
+2023,4,Petén,Hotel,75,1488,4518
+2023,4,Petén,Pensión,15,192,587
+2023,4,Quetzaltenango,Hospedaje,115,1519,3698
+2023,4,Quetzaltenango,Hotel,94,2278,6839
+2023,4,Quetzaltenango,Pensión,24,377,828
+2023,4,Quiché,Hospedaje,115,1703,3928
+2023,4,Quiché,Hotel,50,965,2579
+2023,4,Quiché,Pensión,12,182,357
+2023,4,Retalhuleu,Hospedaje,33,403,1242
+2023,4,Retalhuleu,Hotel,40,849,2938
+2023,4,Retalhuleu,Pensión,4,41,116
+2023,4,Sacatepéquez,Hospedaje,83,831,2272
+2023,4,Sacatepéquez,Hotel,119,2119,6718
+2023,4,Sacatepéquez,Pensión,17,178,592
+2023,4,San Marcos,Hospedaje,160,2154,4916
+2023,4,San Marcos,Hotel,47,876,2252
+2023,4,San Marcos,Pensión,18,272,614
+2023,4,Santa Rosa,Hospedaje,40,514,1310
+2023,4,Santa Rosa,Hotel,39,684,2203
+2023,4,Santa Rosa,Pensión,9,144,449
+2023,4,Sololá,Hospedaje,104,1081,2840
+2023,4,Sololá,Hotel,54,998,3309
+2023,4,Sololá,Pensión,9,82,217
+2023,4,Suchitepéquez,Hospedaje,33,422,879
+2023,4,Suchitepéquez,Hotel,16,397,1095
+2023,4,Suchitepéquez,Pensión,7,164,382
+2023,4,Totonicapán,Hospedaje,26,393,854
+2023,4,Totonicapán,Hotel,7,101,282
+2023,4,Totonicapán,Pensión,1,8,22
+2023,4,Zacapa,Hospedaje,13,216,559
+2023,4,Zacapa,Hotel,17,692,2891
+2023,4,Zacapa,Pensión,5,84,214
+2024,4,Alta Verapaz,Hospedaje,90,1256,3216
+2024,4,Alta Verapaz,Hotel,75,1442,4180
+2024,4,Alta Verapaz,Pensión,26,372,910
+2024,4,Baja Verapaz,Hospedaje,25,325,784
+2024,4,Baja Verapaz,Hotel,19,386,1145
+2024,4,Baja Verapaz,Pensión,11,191,418
+2024,4,Chimaltenango,Hospedaje,55,573,1369
+2024,4,Chimaltenango,Hotel,17,417,1183
+2024,4,Chimaltenango,Pensión,3,18,38
+2024,4,Chiquimula,Hospedaje,122,2342,6503
+2024,4,Chiquimula,Hotel,45,1325,4391
+2024,4,Chiquimula,Pensión,14,290,763
+2024,4,El Progreso,Hospedaje,19,212,553
+2024,4,El Progreso,Hotel,12,204,636
+2024,4,El Progreso,Pensión,2,16,48
+2024,4,Escuintla,Hospedaje,88,1168,3088
+2024,4,Escuintla,Hotel,65,1507,4943
+2024,4,Escuintla,Pensión,16,261,698
+2024,4,Guatemala,Hospedaje,436,5552,12264
+2024,4,Guatemala,Hotel,87,4643,15143
+2024,4,Guatemala,Pensión,36,658,1511
+2024,4,Huehuetenango,Hospedaje,174,2773,5925
+2024,4,Huehuetenango,Hotel,80,1873,5015
+2024,4,Huehuetenango,Pensión,18,274,639
+2024,4,Izabal,Hospedaje,87,1258,4714
+2024,4,Izabal,Hotel,63,1373,4559
+2024,4,Izabal,Pensión,17,262,775
+2024,4,Jalapa,Hospedaje,27,438,980
+2024,4,Jalapa,Hotel,12,270,743
+2024,4,Jalapa,Pensión,3,33,98
+2024,4,Jutiapa,Hospedaje,51,751,1726
+2024,4,Jutiapa,Hotel,29,650,1721
+2024,4,Jutiapa,Pensión,5,59,181
+2024,4,Petén,Hospedaje,145,2070,5744
+2024,4,Petén,Hotel,74,1519,4559
+2024,4,Petén,Pensión,18,250,754
+2024,4,Quetzaltenango,Hospedaje,118,1528,3711
+2024,4,Quetzaltenango,Hotel,97,2329,6982
+2024,4,Quetzaltenango,Pensión,26,410,910
+2024,4,Quiché,Hospedaje,120,1699,3920
+2024,4,Quiché,Hotel,50,963,2562
+2024,4,Quiché,Pensión,11,167,335
+2024,4,Retalhuleu,Hospedaje,36,499,1568
+2024,4,Retalhuleu,Hotel,40,873,2978
+2024,4,Retalhuleu,Pensión,4,41,116
+2024,4,Sacatepéquez,Hospedaje,85,865,2337
+2024,4,Sacatepéquez,Hotel,120,2137,6861
+2024,4,Sacatepéquez,Pensión,16,157,510
+2024,4,San Marcos,Hospedaje,168,2233,5137
+2024,4,San Marcos,Hotel,47,876,2252
+2024,4,San Marcos,Pensión,19,283,644
+2024,4,Santa Rosa,Hospedaje,43,607,1577
+2024,4,Santa Rosa,Hotel,46,843,2717
+2024,4,Santa Rosa,Pensión,5,92,290
+2024,4,Sololá,Hospedaje,141,1514,4396
+2024,4,Sololá,Hotel,82,1463,4620
+2024,4,Sololá,Pensión,5,58,135
+2024,4,Suchitepéquez,Hospedaje,53,766,1584
+2024,4,Suchitepéquez,Hotel,20,482,1594
+2024,4,Suchitepéquez,Pensión,9,160,397
+2024,4,Totonicapán,Hospedaje,37,502,1207
+2024,4,Totonicapán,Hotel,8,129,389
+2024,4,Totonicapán,Pensión,0,0,0
+2024,4,Zacapa,Hospedaje,18,284,739
+2024,4,Zacapa,Hotel,20,745,3048
+2024,4,Zacapa,Pensión,6,139,343
+2025,4,Alta Verapaz,Hospedaje,94,1303,4066
+2025,4,Alta Verapaz,Hotel,71,1395,4089
+2025,4,Alta Verapaz,Pensión,26,372,910
+2025,4,Baja Verapaz,Hospedaje,29,364,867
+2025,4,Baja Verapaz,Hotel,21,449,1328
+2025,4,Baja Verapaz,Pensión,11,191,418
+2025,4,Chimaltenango,Hospedaje,54,571,1385
+2025,4,Chimaltenango,Hotel,17,423,1205
+2025,4,Chimaltenango,Pensión,3,18,38
+2025,4,Chiquimula,Hospedaje,120,2318,6568
+2025,4,Chiquimula,Hotel,45,1297,4335
+2025,4,Chiquimula,Pensión,13,276,725
+2025,4,El Progreso,Hospedaje,19,231,619
+2025,4,El Progreso,Hotel,11,208,647
+2025,4,El Progreso,Pensión,1,7,16
+2025,4,Escuintla,Hospedaje,87,1166,3074
+2025,4,Escuintla,Hotel,64,1512,4978
+2025,4,Escuintla,Pensión,18,289,776
+2025,4,Guatemala,Hospedaje,447,5725,12659
+2025,4,Guatemala,Hotel,85,4580,15095
+2025,4,Guatemala,Pensión,38,690,1603
+2025,4,Huehuetenango,Hospedaje,173,2749,6057
+2025,4,Huehuetenango,Hotel,78,1856,4991
+2025,4,Huehuetenango,Pensión,21,336,801
+2025,4,Izabal,Hospedaje,88,1309,4826
+2025,4,Izabal,Hotel,65,1409,4580
+2025,4,Izabal,Pensión,16,256,755
+2025,4,Jalapa,Hospedaje,26,415,978
+2025,4,Jalapa,Hotel,9,215,583
+2025,4,Jalapa,Pensión,3,33,102
+2025,4,Jutiapa,Hospedaje,50,730,1645
+2025,4,Jutiapa,Hotel,29,661,1747
+2025,4,Jutiapa,Pensión,5,59,181
+2025,4,Petén,Hospedaje,154,2102,5986
+2025,4,Petén,Hotel,74,1571,4685
+2025,4,Petén,Pensión,19,300,1028
+2025,4,Quetzaltenango,Hospedaje,112,1415,3427
+2025,4,Quetzaltenango,Hotel,96,2376,7445
+2025,4,Quetzaltenango,Pensión,25,385,859
+2025,4,Quiché,Hospedaje,124,1746,4050
+2025,4,Quiché,Hotel,49,946,2524
+2025,4,Quiché,Pensión,10,160,309
+2025,4,Retalhuleu,Hospedaje,40,569,1808
+2025,4,Retalhuleu,Hotel,42,951,3381
+2025,4,Retalhuleu,Pensión,3,32,80
+2025,4,Sacatepéquez,Hospedaje,79,812,2218
+2025,4,Sacatepéquez,Hotel,118,2098,6718
+2025,4,Sacatepéquez,Pensión,13,137,426
+2025,4,San Marcos,Hospedaje,169,2215,5104
+2025,4,San Marcos,Hotel,50,924,2411
+2025,4,San Marcos,Pensión,17,259,592
+2025,4,Santa Rosa,Hospedaje,47,673,1706
+2025,4,Santa Rosa,Hotel,48,918,2898
+2025,4,Santa Rosa,Pensión,5,77,260
+2025,4,Sololá,Hospedaje,145,1575,4635
+2025,4,Sololá,Hotel,86,1572,4869
+2025,4,Sololá,Pensión,5,58,135
+2025,4,Suchitepéquez,Hospedaje,58,903,1923
+2025,4,Suchitepéquez,Hotel,22,521,1706
+2025,4,Suchitepéquez,Pensión,8,151,355
+2025,4,Totonicapán,Hospedaje,36,481,1153
+2025,4,Totonicapán,Hotel,8,129,389
+2025,4,Totonicapán,Pensión,0,0,0
+2025,4,Zacapa,Hospedaje,18,269,726
+2025,4,Zacapa,Hotel,21,780,3178
+2025,4,Zacapa,Pensión,6,133,339
+2026,1,Alta Verapaz,Hospedaje,93,1304,4044
+2026,1,Alta Verapaz,Hotel,73,1436,4231
+2026,1,Alta Verapaz,Pensión,27,388,946
+2026,1,Baja Verapaz,Hospedaje,29,364,867
+2026,1,Baja Verapaz,Hotel,21,449,1328
+2026,1,Baja Verapaz,Pensión,11,191,418
+2026,1,Chimaltenango,Hospedaje,56,596,1449
+2026,1,Chimaltenango,Hotel,17,423,1205
+2026,1,Chimaltenango,Pensión,3,18,38
+2026,1,Chiquimula,Hospedaje,121,2323,6581
+2026,1,Chiquimula,Hotel,46,1319,4397
+2026,1,Chiquimula,Pensión,14,290,763
+2026,1,El Progreso,Hospedaje,19,231,619
+2026,1,El Progreso,Hotel,11,208,647
+2026,1,El Progreso,Pensión,1,7,16
+2026,1,Escuintla,Hospedaje,88,1177,3110
+2026,1,Escuintla,Hotel,64,1511,4975
+2026,1,Escuintla,Pensión,18,289,776
+2026,1,Guatemala,Hospedaje,454,5822,12866
+2026,1,Guatemala,Hotel,85,4579,15092
+2026,1,Guatemala,Pensión,38,690,1603
+2026,1,Huehuetenango,Hospedaje,177,2812,6179
+2026,1,Huehuetenango,Hotel,79,1876,5036
+2026,1,Huehuetenango,Pensión,22,360,857
+2026,1,Izabal,Hospedaje,90,1355,4953
+2026,1,Izabal,Hotel,65,1403,4571
+2026,1,Izabal,Pensión,16,256,755
+2026,1,Jalapa,Hospedaje,26,415,978
+2026,1,Jalapa,Hotel,9,215,583
+2026,1,Jalapa,Pensión,3,33,102
+2026,1,Jutiapa,Hospedaje,50,730,1645
+2026,1,Jutiapa,Hotel,29,661,1747
+2026,1,Jutiapa,Pensión,5,59,181
+2026,1,Petén,Hospedaje,158,2170,6172
+2026,1,Petén,Hotel,74,1562,4680
+2026,1,Petén,Pensión,20,325,1119
+2026,1,Quetzaltenango,Hospedaje,114,1453,3538
+2026,1,Quetzaltenango,Hotel,98,2484,7695
+2026,1,Quetzaltenango,Pensión,26,403,914
+2026,1,Quiché,Hospedaje,124,1746,4050
+2026,1,Quiché,Hotel,50,971,2580
+2026,1,Quiché,Pensión,10,160,309
+2026,1,Retalhuleu,Hospedaje,44,618,1921
+2026,1,Retalhuleu,Hotel,41,945,3362
+2026,1,Retalhuleu,Pensión,3,32,80
+2026,1,Sacatepéquez,Hospedaje,79,812,2218
+2026,1,Sacatepéquez,Hotel,121,2129,6818
+2026,1,Sacatepéquez,Pensión,13,137,426
+2026,1,San Marcos,Hospedaje,171,2278,5259
+2026,1,San Marcos,Hotel,49,902,2396
+2026,1,San Marcos,Pensión,17,259,592
+2026,1,Santa Rosa,Hospedaje,48,686,1777
+2026,1,Santa Rosa,Hotel,49,925,2921
+2026,1,Santa Rosa,Pensión,5,77,260
+2026,1,Sololá,Hospedaje,148,1613,4754
+2026,1,Sololá,Hotel,90,1630,5104
+2026,1,Sololá,Pensión,6,66,165
+2026,1,Suchitepéquez,Hospedaje,58,903,1923
+2026,1,Suchitepéquez,Hotel,22,521,1706
+2026,1,Suchitepéquez,Pensión,8,151,355
+2026,1,Totonicapán,Hospedaje,39,529,1281
+2026,1,Totonicapán,Hotel,8,129,389
+2026,1,Totonicapán,Pensión,0,0,0
+2026,1,Zacapa,Hospedaje,19,295,784
+2026,1,Zacapa,Hotel,21,780,3178
+2026,1,Zacapa,Pensión,6,133,339

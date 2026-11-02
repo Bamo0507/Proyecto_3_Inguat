@@ -1,0 +1,793 @@
+anio,mes,departamento,indice_ocupacion
+2023,1,Alta Verapaz,0.27
+2023,2,Alta Verapaz,0.25
+2023,3,Alta Verapaz,0.24
+2023,4,Alta Verapaz,0.43
+2023,5,Alta Verapaz,0.47
+2023,6,Alta Verapaz,0.46
+2023,7,Alta Verapaz,0.29
+2023,8,Alta Verapaz,0.34
+2023,9,Alta Verapaz,0.32
+2023,10,Alta Verapaz,0.26
+2023,11,Alta Verapaz,0.18
+2023,12,Alta Verapaz,0.27
+2023,1,Baja Verapaz,0.52
+2023,2,Baja Verapaz,0.53
+2023,3,Baja Verapaz,0.45
+2023,4,Baja Verapaz,0.69
+2023,5,Baja Verapaz,0.62
+2023,6,Baja Verapaz,0.61
+2023,7,Baja Verapaz,0.27
+2023,8,Baja Verapaz,0.32
+2023,9,Baja Verapaz,0.32
+2023,10,Baja Verapaz,0.25
+2023,11,Baja Verapaz,0.25
+2023,12,Baja Verapaz,0.29
+2023,1,Chimaltenango,0.44
+2023,2,Chimaltenango,0.44
+2023,3,Chimaltenango,0.37
+2023,4,Chimaltenango,0.47
+2023,5,Chimaltenango,0.44
+2023,6,Chimaltenango,0.4
+2023,7,Chimaltenango,0.31
+2023,8,Chimaltenango,0.3
+2023,9,Chimaltenango,0.32
+2023,10,Chimaltenango,0.25
+2023,11,Chimaltenango,0.22
+2023,12,Chimaltenango,0.28
+2023,1,Chiquimula,0.41
+2023,2,Chiquimula,0.48
+2023,3,Chiquimula,0.34
+2023,4,Chiquimula,0.49
+2023,5,Chiquimula,0.63
+2023,6,Chiquimula,0.43
+2023,7,Chiquimula,0.42
+2023,8,Chiquimula,0.66
+2023,9,Chiquimula,0.53
+2023,10,Chiquimula,0.46
+2023,11,Chiquimula,0.32
+2023,12,Chiquimula,0.48
+2023,1,El Progreso,0.44
+2023,2,El Progreso,0.52
+2023,3,El Progreso,0.42
+2023,4,El Progreso,0.4
+2023,5,El Progreso,0.48
+2023,6,El Progreso,0.54
+2023,7,El Progreso,0.34
+2023,8,El Progreso,0.34
+2023,9,El Progreso,0.38
+2023,10,El Progreso,0.41
+2023,11,El Progreso,0.34
+2023,12,El Progreso,0.45
+2023,1,Escuintla,0.74
+2023,2,Escuintla,0.68
+2023,3,Escuintla,0.51
+2023,4,Escuintla,0.76
+2023,5,Escuintla,0.75
+2023,6,Escuintla,0.55
+2023,7,Escuintla,0.63
+2023,8,Escuintla,0.67
+2023,9,Escuintla,0.61
+2023,10,Escuintla,0.55
+2023,11,Escuintla,0.49
+2023,12,Escuintla,0.62
+2023,1,Guatemala,0.84
+2023,2,Guatemala,0.72
+2023,3,Guatemala,0.89
+2023,4,Guatemala,0.93
+2023,5,Guatemala,0.66
+2023,6,Guatemala,0.76
+2023,7,Guatemala,0.77
+2023,8,Guatemala,0.82
+2023,9,Guatemala,0.79
+2023,10,Guatemala,0.75
+2023,11,Guatemala,0.57
+2023,12,Guatemala,0.81
+2023,1,Huehuetenango,0.28
+2023,2,Huehuetenango,0.31
+2023,3,Huehuetenango,0.31
+2023,4,Huehuetenango,0.35
+2023,5,Huehuetenango,0.35
+2023,6,Huehuetenango,0.39
+2023,7,Huehuetenango,0.38
+2023,8,Huehuetenango,0.37
+2023,9,Huehuetenango,0.43
+2023,10,Huehuetenango,0.31
+2023,11,Huehuetenango,0.21
+2023,12,Huehuetenango,0.39
+2023,1,Izabal,0.47
+2023,2,Izabal,0.46
+2023,3,Izabal,0.45
+2023,4,Izabal,0.89
+2023,5,Izabal,0.92
+2023,6,Izabal,0.69
+2023,7,Izabal,0.71
+2023,8,Izabal,0.81
+2023,9,Izabal,0.73
+2023,10,Izabal,0.56
+2023,11,Izabal,0.4
+2023,12,Izabal,0.64
+2023,1,Jalapa,0.2
+2023,2,Jalapa,0.24
+2023,3,Jalapa,0.22
+2023,4,Jalapa,0.28
+2023,5,Jalapa,0.22
+2023,6,Jalapa,0.26
+2023,7,Jalapa,0.22
+2023,8,Jalapa,0.28
+2023,9,Jalapa,0.24
+2023,10,Jalapa,0.25
+2023,11,Jalapa,0.22
+2023,12,Jalapa,0.22
+2023,1,Jutiapa,0.25
+2023,2,Jutiapa,0.34
+2023,3,Jutiapa,0.3
+2023,4,Jutiapa,0.47
+2023,5,Jutiapa,0.38
+2023,6,Jutiapa,0.37
+2023,7,Jutiapa,0.43
+2023,8,Jutiapa,0.41
+2023,9,Jutiapa,0.41
+2023,10,Jutiapa,0.42
+2023,11,Jutiapa,0.33
+2023,12,Jutiapa,0.43
+2023,1,Petén,0.64
+2023,2,Petén,0.69
+2023,3,Petén,0.63
+2023,4,Petén,0.72
+2023,5,Petén,0.86
+2023,6,Petén,0.51
+2023,7,Petén,0.52
+2023,8,Petén,0.74
+2023,9,Petén,0.68
+2023,10,Petén,0.49
+2023,11,Petén,0.33
+2023,12,Petén,0.71
+2023,1,Quetzaltenango,0.45
+2023,2,Quetzaltenango,0.44
+2023,3,Quetzaltenango,0.44
+2023,4,Quetzaltenango,0.43
+2023,5,Quetzaltenango,0.52
+2023,6,Quetzaltenango,0.47
+2023,7,Quetzaltenango,0.54
+2023,8,Quetzaltenango,0.56
+2023,9,Quetzaltenango,0.54
+2023,10,Quetzaltenango,0.55
+2023,11,Quetzaltenango,0.28
+2023,12,Quetzaltenango,0.54
+2023,1,Quiché,0.16
+2023,2,Quiché,0.18
+2023,3,Quiché,0.24
+2023,4,Quiché,0.27
+2023,5,Quiché,0.23
+2023,6,Quiché,0.26
+2023,7,Quiché,0.24
+2023,8,Quiché,0.28
+2023,9,Quiché,0.29
+2023,10,Quiché,0.24
+2023,11,Quiché,0.15
+2023,12,Quiché,0.3
+2023,1,Retalhuleu,0.51
+2023,2,Retalhuleu,0.43
+2023,3,Retalhuleu,0.31
+2023,4,Retalhuleu,0.38
+2023,5,Retalhuleu,0.45
+2023,6,Retalhuleu,0.34
+2023,7,Retalhuleu,0.41
+2023,8,Retalhuleu,0.45
+2023,9,Retalhuleu,0.39
+2023,10,Retalhuleu,0.34
+2023,11,Retalhuleu,0.22
+2023,12,Retalhuleu,0.36
+2023,1,Sacatepéquez,0.8
+2023,2,Sacatepéquez,0.83
+2023,3,Sacatepéquez,0.9
+2023,4,Sacatepéquez,0.92
+2023,5,Sacatepéquez,0.92
+2023,6,Sacatepéquez,0.73
+2023,7,Sacatepéquez,0.64
+2023,8,Sacatepéquez,0.87
+2023,9,Sacatepéquez,0.71
+2023,10,Sacatepéquez,0.64
+2023,11,Sacatepéquez,0.52
+2023,12,Sacatepéquez,0.94
+2023,1,San Marcos,0.28
+2023,2,San Marcos,0.3
+2023,3,San Marcos,0.34
+2023,4,San Marcos,0.43
+2023,5,San Marcos,0.34
+2023,6,San Marcos,0.38
+2023,7,San Marcos,0.36
+2023,8,San Marcos,0.42
+2023,9,San Marcos,0.48
+2023,10,San Marcos,0.4
+2023,11,San Marcos,0.31
+2023,12,San Marcos,0.44
+2023,1,Santa Rosa,0.53
+2023,2,Santa Rosa,0.51
+2023,3,Santa Rosa,0.33
+2023,4,Santa Rosa,0.46
+2023,5,Santa Rosa,0.43
+2023,6,Santa Rosa,0.33
+2023,7,Santa Rosa,0.39
+2023,8,Santa Rosa,0.43
+2023,9,Santa Rosa,0.3
+2023,10,Santa Rosa,0.32
+2023,11,Santa Rosa,0.19
+2023,12,Santa Rosa,0.35
+2023,1,Sololá,0.79
+2023,2,Sololá,0.94
+2023,3,Sololá,0.85
+2023,4,Sololá,0.85
+2023,5,Sololá,0.93
+2023,6,Sololá,0.57
+2023,7,Sololá,0.62
+2023,8,Sololá,0.78
+2023,9,Sololá,0.64
+2023,10,Sololá,0.52
+2023,11,Sololá,0.2
+2023,12,Sololá,0.73
+2023,1,Suchitepéquez,0.55
+2023,2,Suchitepéquez,0.57
+2023,3,Suchitepéquez,0.58
+2023,4,Suchitepéquez,0.62
+2023,5,Suchitepéquez,0.63
+2023,6,Suchitepéquez,0.53
+2023,7,Suchitepéquez,0.58
+2023,8,Suchitepéquez,0.65
+2023,9,Suchitepéquez,0.59
+2023,10,Suchitepéquez,0.59
+2023,11,Suchitepéquez,0.47
+2023,12,Suchitepéquez,0.62
+2023,1,Totonicapán,0.56
+2023,2,Totonicapán,0.63
+2023,3,Totonicapán,0.4
+2023,4,Totonicapán,0.74
+2023,5,Totonicapán,0.61
+2023,6,Totonicapán,0.77
+2023,7,Totonicapán,0.8
+2023,8,Totonicapán,0.55
+2023,9,Totonicapán,0.44
+2023,10,Totonicapán,0.5
+2023,11,Totonicapán,0.2
+2023,12,Totonicapán,0.49
+2023,1,Zacapa,0.36
+2023,2,Zacapa,0.33
+2023,3,Zacapa,0.35
+2023,4,Zacapa,0.44
+2023,5,Zacapa,0.39
+2023,6,Zacapa,0.33
+2023,7,Zacapa,0.33
+2023,8,Zacapa,0.42
+2023,9,Zacapa,0.37
+2023,10,Zacapa,0.29
+2023,11,Zacapa,0.22
+2023,12,Zacapa,0.3
+2024,1,Alta Verapaz,0.27
+2024,2,Alta Verapaz,0.29
+2024,3,Alta Verapaz,0.31
+2024,4,Alta Verapaz,0.66
+2024,5,Alta Verapaz,0.6
+2024,6,Alta Verapaz,0.7
+2024,7,Alta Verapaz,0.44
+2024,8,Alta Verapaz,0.49
+2024,9,Alta Verapaz,0.56
+2024,10,Alta Verapaz,0.46
+2024,11,Alta Verapaz,0.49
+2024,12,Alta Verapaz,0.52
+2024,1,Baja Verapaz,0.25
+2024,2,Baja Verapaz,0.24
+2024,3,Baja Verapaz,0.3
+2024,4,Baja Verapaz,0.56
+2024,5,Baja Verapaz,0.51
+2024,6,Baja Verapaz,0.56
+2024,7,Baja Verapaz,0.41
+2024,8,Baja Verapaz,0.43
+2024,9,Baja Verapaz,0.42
+2024,10,Baja Verapaz,0.38
+2024,11,Baja Verapaz,0.4
+2024,12,Baja Verapaz,0.37
+2024,1,Chimaltenango,0.27
+2024,2,Chimaltenango,0.25
+2024,3,Chimaltenango,0.22
+2024,4,Chimaltenango,0.43
+2024,5,Chimaltenango,0.38
+2024,6,Chimaltenango,0.42
+2024,7,Chimaltenango,0.36
+2024,8,Chimaltenango,0.42
+2024,9,Chimaltenango,0.39
+2024,10,Chimaltenango,0.35
+2024,11,Chimaltenango,0.44
+2024,12,Chimaltenango,0.45
+2024,1,Chiquimula,0.62
+2024,2,Chiquimula,0.74
+2024,3,Chiquimula,0.56
+2024,4,Chiquimula,0.79
+2024,5,Chiquimula,0.53
+2024,6,Chiquimula,0.63
+2024,7,Chiquimula,0.52
+2024,8,Chiquimula,0.65
+2024,9,Chiquimula,0.66
+2024,10,Chiquimula,0.48
+2024,11,Chiquimula,0.49
+2024,12,Chiquimula,0.6
+2024,1,El Progreso,0.43
+2024,2,El Progreso,0.43
+2024,3,El Progreso,0.4
+2024,4,El Progreso,0.42
+2024,5,El Progreso,0.37
+2024,6,El Progreso,0.36
+2024,7,El Progreso,0.34
+2024,8,El Progreso,0.32
+2024,9,El Progreso,0.35
+2024,10,El Progreso,0.31
+2024,11,El Progreso,0.33
+2024,12,El Progreso,0.27
+2024,1,Escuintla,0.79
+2024,2,Escuintla,0.74
+2024,3,Escuintla,0.61
+2024,4,Escuintla,0.84
+2024,5,Escuintla,0.68
+2024,6,Escuintla,0.71
+2024,7,Escuintla,0.6
+2024,8,Escuintla,0.73
+2024,9,Escuintla,0.69
+2024,10,Escuintla,0.6
+2024,11,Escuintla,0.75
+2024,12,Escuintla,0.84
+2024,1,Guatemala,0.85
+2024,2,Guatemala,0.83
+2024,3,Guatemala,0.95
+2024,4,Guatemala,0.96
+2024,5,Guatemala,0.81
+2024,6,Guatemala,0.9
+2024,7,Guatemala,0.92
+2024,8,Guatemala,0.87
+2024,9,Guatemala,0.91
+2024,10,Guatemala,0.88
+2024,11,Guatemala,0.92
+2024,12,Guatemala,0.92
+2024,1,Huehuetenango,0.32
+2024,2,Huehuetenango,0.36
+2024,3,Huehuetenango,0.39
+2024,4,Huehuetenango,0.56
+2024,5,Huehuetenango,0.48
+2024,6,Huehuetenango,0.58
+2024,7,Huehuetenango,0.49
+2024,8,Huehuetenango,0.54
+2024,9,Huehuetenango,0.65
+2024,10,Huehuetenango,0.57
+2024,11,Huehuetenango,0.52
+2024,12,Huehuetenango,0.59
+2024,1,Izabal,0.79
+2024,2,Izabal,0.84
+2024,3,Izabal,0.74
+2024,4,Izabal,0.95
+2024,5,Izabal,0.61
+2024,6,Izabal,0.59
+2024,7,Izabal,0.63
+2024,8,Izabal,0.64
+2024,9,Izabal,0.66
+2024,10,Izabal,0.52
+2024,11,Izabal,0.57
+2024,12,Izabal,0.71
+2024,1,Jalapa,0.2
+2024,2,Jalapa,0.19
+2024,3,Jalapa,0.25
+2024,4,Jalapa,0.26
+2024,5,Jalapa,0.3
+2024,6,Jalapa,0.35
+2024,7,Jalapa,0.29
+2024,8,Jalapa,0.32
+2024,9,Jalapa,0.34
+2024,10,Jalapa,0.33
+2024,11,Jalapa,0.38
+2024,12,Jalapa,0.34
+2024,1,Jutiapa,0.35
+2024,2,Jutiapa,0.48
+2024,3,Jutiapa,0.48
+2024,4,Jutiapa,0.6
+2024,5,Jutiapa,0.63
+2024,6,Jutiapa,0.65
+2024,7,Jutiapa,0.38
+2024,8,Jutiapa,0.43
+2024,9,Jutiapa,0.46
+2024,10,Jutiapa,0.41
+2024,11,Jutiapa,0.49
+2024,12,Jutiapa,0.47
+2024,1,Petén,0.86
+2024,2,Petén,0.91
+2024,3,Petén,0.85
+2024,4,Petén,0.96
+2024,5,Petén,0.67
+2024,6,Petén,0.55
+2024,7,Petén,0.57
+2024,8,Petén,0.67
+2024,9,Petén,0.65
+2024,10,Petén,0.45
+2024,11,Petén,0.51
+2024,12,Petén,0.81
+2024,1,Quetzaltenango,0.61
+2024,2,Quetzaltenango,0.52
+2024,3,Quetzaltenango,0.53
+2024,4,Quetzaltenango,0.7
+2024,5,Quetzaltenango,0.59
+2024,6,Quetzaltenango,0.7
+2024,7,Quetzaltenango,0.49
+2024,8,Quetzaltenango,0.64
+2024,9,Quetzaltenango,0.65
+2024,10,Quetzaltenango,0.61
+2024,11,Quetzaltenango,0.68
+2024,12,Quetzaltenango,0.65
+2024,1,Quiché,0.24
+2024,2,Quiché,0.26
+2024,3,Quiché,0.32
+2024,4,Quiché,0.43
+2024,5,Quiché,0.41
+2024,6,Quiché,0.4
+2024,7,Quiché,0.34
+2024,8,Quiché,0.39
+2024,9,Quiché,0.43
+2024,10,Quiché,0.37
+2024,11,Quiché,0.42
+2024,12,Quiché,0.4
+2024,1,Retalhuleu,0.55
+2024,2,Retalhuleu,0.45
+2024,3,Retalhuleu,0.29
+2024,4,Retalhuleu,0.57
+2024,5,Retalhuleu,0.41
+2024,6,Retalhuleu,0.38
+2024,7,Retalhuleu,0.39
+2024,8,Retalhuleu,0.37
+2024,9,Retalhuleu,0.38
+2024,10,Retalhuleu,0.37
+2024,11,Retalhuleu,0.38
+2024,12,Retalhuleu,0.42
+2024,1,Sacatepéquez,0.9
+2024,2,Sacatepéquez,0.93
+2024,3,Sacatepéquez,0.95
+2024,4,Sacatepéquez,0.97
+2024,5,Sacatepéquez,0.71
+2024,6,Sacatepéquez,0.65
+2024,7,Sacatepéquez,0.76
+2024,8,Sacatepéquez,0.85
+2024,9,Sacatepéquez,0.83
+2024,10,Sacatepéquez,0.65
+2024,11,Sacatepéquez,0.82
+2024,12,Sacatepéquez,0.95
+2024,1,San Marcos,0.39
+2024,2,San Marcos,0.42
+2024,3,San Marcos,0.6
+2024,4,San Marcos,0.72
+2024,5,San Marcos,0.73
+2024,6,San Marcos,0.83
+2024,7,San Marcos,0.64
+2024,8,San Marcos,0.68
+2024,9,San Marcos,0.74
+2024,10,San Marcos,0.67
+2024,11,San Marcos,0.77
+2024,12,San Marcos,0.74
+2024,1,Santa Rosa,0.61
+2024,2,Santa Rosa,0.37
+2024,3,Santa Rosa,0.42
+2024,4,Santa Rosa,0.76
+2024,5,Santa Rosa,0.45
+2024,6,Santa Rosa,0.4
+2024,7,Santa Rosa,0.27
+2024,8,Santa Rosa,0.32
+2024,9,Santa Rosa,0.36
+2024,10,Santa Rosa,0.3
+2024,11,Santa Rosa,0.35
+2024,12,Santa Rosa,0.44
+2024,1,Sololá,0.91
+2024,2,Sololá,0.83
+2024,3,Sololá,0.84
+2024,4,Sololá,0.96
+2024,5,Sololá,0.69
+2024,6,Sololá,0.58
+2024,7,Sololá,0.51
+2024,8,Sololá,0.61
+2024,9,Sololá,0.57
+2024,10,Sololá,0.36
+2024,11,Sololá,0.46
+2024,12,Sololá,0.7
+2024,1,Suchitepéquez,0.73
+2024,2,Suchitepéquez,0.67
+2024,3,Suchitepéquez,0.78
+2024,4,Suchitepéquez,0.78
+2024,5,Suchitepéquez,0.81
+2024,6,Suchitepéquez,0.75
+2024,7,Suchitepéquez,0.47
+2024,8,Suchitepéquez,0.6
+2024,9,Suchitepéquez,0.58
+2024,10,Suchitepéquez,0.53
+2024,11,Suchitepéquez,0.54
+2024,12,Suchitepéquez,0.47
+2024,1,Totonicapán,0.46
+2024,2,Totonicapán,0.37
+2024,3,Totonicapán,0.35
+2024,4,Totonicapán,0.42
+2024,5,Totonicapán,0.48
+2024,6,Totonicapán,0.55
+2024,7,Totonicapán,0.24
+2024,8,Totonicapán,0.21
+2024,9,Totonicapán,0.29
+2024,10,Totonicapán,0.24
+2024,11,Totonicapán,0.36
+2024,12,Totonicapán,0.25
+2024,1,Zacapa,0.34
+2024,2,Zacapa,0.33
+2024,3,Zacapa,0.3
+2024,4,Zacapa,0.53
+2024,5,Zacapa,0.43
+2024,6,Zacapa,0.49
+2024,7,Zacapa,0.37
+2024,8,Zacapa,0.37
+2024,9,Zacapa,0.52
+2024,10,Zacapa,0.35
+2024,11,Zacapa,0.37
+2024,12,Zacapa,0.38
+2025,1,Alta Verapaz,0.47
+2025,2,Alta Verapaz,0.49
+2025,3,Alta Verapaz,0.46
+2025,4,Alta Verapaz,0.55
+2025,5,Alta Verapaz,0.6
+2025,6,Alta Verapaz,0.6
+2025,7,Alta Verapaz,0.58
+2025,8,Alta Verapaz,0.66
+2025,9,Alta Verapaz,0.62
+2025,10,Alta Verapaz,0.49
+2025,11,Alta Verapaz,0.6
+2025,12,Alta Verapaz,0.71
+2025,1,Baja Verapaz,0.27
+2025,2,Baja Verapaz,0.3
+2025,3,Baja Verapaz,0.37
+2025,4,Baja Verapaz,0.46
+2025,5,Baja Verapaz,0.37
+2025,6,Baja Verapaz,0.47
+2025,7,Baja Verapaz,0.43
+2025,8,Baja Verapaz,0.51
+2025,9,Baja Verapaz,0.44
+2025,10,Baja Verapaz,0.41
+2025,11,Baja Verapaz,0.47
+2025,12,Baja Verapaz,0.44
+2025,1,Chimaltenango,0.4
+2025,2,Chimaltenango,0.38
+2025,3,Chimaltenango,0.34
+2025,4,Chimaltenango,0.45
+2025,5,Chimaltenango,0.39
+2025,6,Chimaltenango,0.44
+2025,7,Chimaltenango,0.48
+2025,8,Chimaltenango,0.47
+2025,9,Chimaltenango,0.48
+2025,10,Chimaltenango,0.38
+2025,11,Chimaltenango,0.47
+2025,12,Chimaltenango,0.51
+2025,1,Chiquimula,0.59
+2025,2,Chiquimula,0.84
+2025,3,Chiquimula,0.58
+2025,4,Chiquimula,0.64
+2025,5,Chiquimula,0.83
+2025,6,Chiquimula,0.62
+2025,7,Chiquimula,0.61
+2025,8,Chiquimula,0.7
+2025,9,Chiquimula,0.83
+2025,10,Chiquimula,0.52
+2025,11,Chiquimula,0.64
+2025,12,Chiquimula,0.82
+2025,1,El Progreso,0.31
+2025,2,El Progreso,0.29
+2025,3,El Progreso,0.28
+2025,4,El Progreso,0.33
+2025,5,El Progreso,0.27
+2025,6,El Progreso,0.33
+2025,7,El Progreso,0.31
+2025,8,El Progreso,0.27
+2025,9,El Progreso,0.33
+2025,10,El Progreso,0.27
+2025,11,El Progreso,0.34
+2025,12,El Progreso,0.33
+2025,1,Escuintla,0.95
+2025,2,Escuintla,0.95
+2025,3,Escuintla,0.81
+2025,4,Escuintla,0.88
+2025,5,Escuintla,0.9
+2025,6,Escuintla,0.74
+2025,7,Escuintla,0.85
+2025,8,Escuintla,0.85
+2025,9,Escuintla,0.82
+2025,10,Escuintla,0.67
+2025,11,Escuintla,0.83
+2025,12,Escuintla,0.96
+2025,1,Guatemala,0.84
+2025,2,Guatemala,0.77
+2025,3,Guatemala,0.93
+2025,4,Guatemala,0.97
+2025,5,Guatemala,0.79
+2025,6,Guatemala,0.79
+2025,7,Guatemala,0.71
+2025,8,Guatemala,0.84
+2025,9,Guatemala,0.83
+2025,10,Guatemala,0.82
+2025,11,Guatemala,0.9
+2025,12,Guatemala,0.98
+2025,1,Huehuetenango,0.43
+2025,2,Huehuetenango,0.56
+2025,3,Huehuetenango,0.53
+2025,4,Huehuetenango,0.73
+2025,5,Huehuetenango,0.7
+2025,6,Huehuetenango,0.68
+2025,7,Huehuetenango,0.7
+2025,8,Huehuetenango,0.8
+2025,9,Huehuetenango,0.78
+2025,10,Huehuetenango,0.53
+2025,11,Huehuetenango,0.81
+2025,12,Huehuetenango,0.77
+2025,1,Izabal,0.78
+2025,2,Izabal,0.74
+2025,3,Izabal,0.64
+2025,4,Izabal,0.82
+2025,5,Izabal,0.83
+2025,6,Izabal,0.73
+2025,7,Izabal,0.74
+2025,8,Izabal,0.81
+2025,9,Izabal,0.82
+2025,10,Izabal,0.56
+2025,11,Izabal,0.75
+2025,12,Izabal,0.92
+2025,1,Jalapa,0.27
+2025,2,Jalapa,0.32
+2025,3,Jalapa,0.3
+2025,4,Jalapa,0.3
+2025,5,Jalapa,0.33
+2025,6,Jalapa,0.38
+2025,7,Jalapa,0.34
+2025,8,Jalapa,0.39
+2025,9,Jalapa,0.45
+2025,10,Jalapa,0.38
+2025,11,Jalapa,0.46
+2025,12,Jalapa,0.37
+2025,1,Jutiapa,0.38
+2025,2,Jutiapa,0.48
+2025,3,Jutiapa,0.45
+2025,4,Jutiapa,0.48
+2025,5,Jutiapa,0.42
+2025,6,Jutiapa,0.5
+2025,7,Jutiapa,0.47
+2025,8,Jutiapa,0.54
+2025,9,Jutiapa,0.54
+2025,10,Jutiapa,0.46
+2025,11,Jutiapa,0.64
+2025,12,Jutiapa,0.52
+2025,1,Petén,0.89
+2025,2,Petén,0.95
+2025,3,Petén,0.81
+2025,4,Petén,0.81
+2025,5,Petén,0.84
+2025,6,Petén,0.57
+2025,7,Petén,0.65
+2025,8,Petén,0.68
+2025,9,Petén,0.69
+2025,10,Petén,0.43
+2025,11,Petén,0.59
+2025,12,Petén,0.92
+2025,1,Quetzaltenango,0.66
+2025,2,Quetzaltenango,0.63
+2025,3,Quetzaltenango,0.5
+2025,4,Quetzaltenango,0.6
+2025,5,Quetzaltenango,0.62
+2025,6,Quetzaltenango,0.68
+2025,7,Quetzaltenango,0.66
+2025,8,Quetzaltenango,0.85
+2025,9,Quetzaltenango,0.94
+2025,10,Quetzaltenango,0.6
+2025,11,Quetzaltenango,0.8
+2025,12,Quetzaltenango,0.78
+2025,1,Quiché,0.34
+2025,2,Quiché,0.42
+2025,3,Quiché,0.44
+2025,4,Quiché,0.44
+2025,5,Quiché,0.39
+2025,6,Quiché,0.45
+2025,7,Quiché,0.4
+2025,8,Quiché,0.49
+2025,9,Quiché,0.5
+2025,10,Quiché,0.39
+2025,11,Quiché,0.49
+2025,12,Quiché,0.49
+2025,1,Retalhuleu,0.55
+2025,2,Retalhuleu,0.49
+2025,3,Retalhuleu,0.37
+2025,4,Retalhuleu,0.46
+2025,5,Retalhuleu,0.53
+2025,6,Retalhuleu,0.42
+2025,7,Retalhuleu,0.45
+2025,8,Retalhuleu,0.49
+2025,9,Retalhuleu,0.4
+2025,10,Retalhuleu,0.38
+2025,11,Retalhuleu,0.43
+2025,12,Retalhuleu,0.49
+2025,1,Sacatepéquez,0.93
+2025,2,Sacatepéquez,0.92
+2025,3,Sacatepéquez,0.88
+2025,4,Sacatepéquez,0.97
+2025,5,Sacatepéquez,0.8
+2025,6,Sacatepéquez,0.71
+2025,7,Sacatepéquez,0.62
+2025,8,Sacatepéquez,0.71
+2025,9,Sacatepéquez,0.71
+2025,10,Sacatepéquez,0.73
+2025,11,Sacatepéquez,0.82
+2025,12,Sacatepéquez,0.97
+2025,1,San Marcos,0.56
+2025,2,San Marcos,0.62
+2025,3,San Marcos,0.65
+2025,4,San Marcos,0.76
+2025,5,San Marcos,0.74
+2025,6,San Marcos,0.75
+2025,7,San Marcos,0.71
+2025,8,San Marcos,0.81
+2025,9,San Marcos,0.79
+2025,10,San Marcos,0.67
+2025,11,San Marcos,0.77
+2025,12,San Marcos,0.68
+2025,1,Santa Rosa,0.76
+2025,2,Santa Rosa,0.67
+2025,3,Santa Rosa,0.45
+2025,4,Santa Rosa,0.68
+2025,5,Santa Rosa,0.56
+2025,6,Santa Rosa,0.45
+2025,7,Santa Rosa,0.55
+2025,8,Santa Rosa,0.63
+2025,9,Santa Rosa,0.59
+2025,10,Santa Rosa,0.36
+2025,11,Santa Rosa,0.57
+2025,12,Santa Rosa,0.72
+2025,1,Sololá,0.83
+2025,2,Sololá,0.81
+2025,3,Sololá,0.74
+2025,4,Sololá,0.82
+2025,5,Sololá,0.84
+2025,6,Sololá,0.54
+2025,7,Sololá,0.57
+2025,8,Sololá,0.64
+2025,9,Sololá,0.64
+2025,10,Sololá,0.48
+2025,11,Sololá,0.61
+2025,12,Sololá,0.96
+2025,1,Suchitepéquez,0.52
+2025,2,Suchitepéquez,0.53
+2025,3,Suchitepéquez,0.59
+2025,4,Suchitepéquez,0.8
+2025,5,Suchitepéquez,0.63
+2025,6,Suchitepéquez,0.68
+2025,7,Suchitepéquez,0.6
+2025,8,Suchitepéquez,0.76
+2025,9,Suchitepéquez,0.74
+2025,10,Suchitepéquez,0.55
+2025,11,Suchitepéquez,0.74
+2025,12,Suchitepéquez,0.72
+2025,1,Totonicapán,0.27
+2025,2,Totonicapán,0.32
+2025,3,Totonicapán,0.25
+2025,4,Totonicapán,0.26
+2025,5,Totonicapán,0.28
+2025,6,Totonicapán,0.34
+2025,7,Totonicapán,0.26
+2025,8,Totonicapán,0.36
+2025,9,Totonicapán,0.42
+2025,10,Totonicapán,0.33
+2025,11,Totonicapán,0.45
+2025,12,Totonicapán,0.33
+2025,1,Zacapa,0.36
+2025,2,Zacapa,0.41
+2025,3,Zacapa,0.43
+2025,4,Zacapa,0.48
+2025,5,Zacapa,0.52
+2025,6,Zacapa,0.53
+2025,7,Zacapa,0.49
+2025,8,Zacapa,0.46
+2025,9,Zacapa,0.5
+2025,10,Zacapa,0.38
+2025,11,Zacapa,0.49
+2025,12,Zacapa,0.47
