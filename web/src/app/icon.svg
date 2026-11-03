@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>:root{--primary:#0073BB;--primary-foreground:#FFFFFF}</style>
+  <rect width="64" height="64" rx="12" fill="var(--primary)"/>
+  <g fill="none" stroke="var(--primary-foreground)" stroke-width="2.2" stroke-linecap="round">
+    <path d="M52 10C31 8 10 18 10 34c0 14 19 22 42 17"/>
+    <path d="M52 20c-16-3-32 4-32 14 0 10 14 14 32 10"/>
+    <path d="M52 30c-12-3-22 0-22 5s10 7 22 3"/>
+  </g>
+</svg>
