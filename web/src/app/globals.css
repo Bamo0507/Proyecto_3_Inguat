@@ -250,3 +250,50 @@ html:has(:focus-visible) .module-introduction { animation: none; }
     height: min(100%, calc(100svh - 5rem));
   }
 }
+
+.indicador {
+  --card-spacing: 1.5rem;
+  border-radius: 1rem;
+  gap: 1.25rem;
+  box-shadow: none;
+  border: 1px solid var(--border);
+}
+.indicador [data-slot="card-header"] {
+  align-items: center;
+  min-height: 2.25rem;
+}
+.indicador-emblema {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .75rem;
+  background: var(--secondary);
+  color: var(--primary);
+}
+.indicador-emblema svg { width: 1.25rem; height: 1.25rem; }
+.indicador-valor {
+  color: var(--primary);
+  font-size: clamp(2.5rem, 3.8vw, 3.5rem);
+  letter-spacing: -.055em;
+}
+.indicador-contexto {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.indicador-comparacion { color: var(--primary); }
+.grupo-indicadores { display: flex; flex-direction: column; gap: .75rem; }
+.grupo-indicadores-cabecera {
+  font-size: .75rem;
+  color: var(--muted-foreground);
+}
+.grupo-indicadores-contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .grupo-indicadores-contenido { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
