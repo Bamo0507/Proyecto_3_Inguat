@@ -76,7 +76,7 @@ La hoja `Notas` del libro describe uso académico, cambios de fuente en 2021 y 2
 | `fecha` | fecha mensual `AAAA-MM-DD` | Primer día del mes derivado de año y mes. |
 | `indice_ocupacion` | decimal, proporción de 0 a 1 | Escala original; no multiplicar por cien. |
 
-Se filtra `Sololá` y se retiran año, mes y departamento después de validar. Los extremos respaldados por boletines se conservan.
+Se filtra `Sololá` y se retiran año, mes y departamento después de validar. Los extremos respaldados por boletines se conservan. Una ausencia pasa a nulo como `ausente_en_origen`; un indice no numerico, no finito o fuera de 0 a 1 se rechaza a nulo. Su valor original y fila CSV quedan en `incidencias_tipado.csv`, conservando el mes. Fechas y cobertura invalidas detienen la etapa.
 
 ## `oferta_alojamiento/oferta_solola.csv`
 
@@ -92,3 +92,18 @@ Se filtra `Sololá` y se retiran año, mes y departamento después de validar. L
 | `plazas_cama` | entero no negativo, plazas | Capacidad de personas. |
 
 Se filtra `Sololá` y se retira departamento. Los inventarios repetidos entre años se conservan. El corte de 2026 es parcial y no equivale a un cierre anual. No se inventan fechas diarias ni trimestres ausentes.
+
+## Evidencia de cantidades en ocupacion y oferta
+
+Ambas fuentes generan `incidencias_tipado.csv`. En los datos actuales, los informes estan vacios y solo contienen la cabecera. En nuevas ejecuciones se distinguen `ausente_en_origen`, `rechazado_por_invalido` y `requiere_revision`.
+
+| Columna | Significado |
+|---|---|
+| `fila_csv` | Fila del archivo de origen, contando la cabecera como fila 1. |
+| `columna` | Cantidad a la que corresponde la incidencia. |
+| `valor_original` | Valor recibido antes del tipado. |
+| `valor_normalizado` | Valor conservado o `\N` si se rechazo o estaba ausente. |
+| `motivo` | Ausencia, formato, rango, fraccion o inconsistencia de capacidad. |
+| `clasificacion` | Ausencia en origen, rechazo por invalidez o dato que requiere revision. |
+
+En oferta, una cantidad no numerica, no finita, negativa o fraccionaria pasa a nulo, conservando la observacion. Las incoherencias entre habitaciones, establecimientos y plazas se registran para revision y conservan sus cantidades. No se inventa el valor que resolveria la discrepancia. Este tratamiento no modifica anio, trimestre ni claves: un error en esos identificadores impide certificar la salida.

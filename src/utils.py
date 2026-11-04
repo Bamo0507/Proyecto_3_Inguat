@@ -3,7 +3,7 @@ import warnings
 from decimal import Decimal, InvalidOperation
 import pandas as pd
 from openpyxl import load_workbook
-from config import FUENTES, RAW, PROCESSED, NULO_CSV, MARCADORES_NULO
+from config import FUENTES, RAW, PROCESSED, NULO_CSV, MARCADORES_NULO, COLUMNAS_INCIDENCIAS_CANTIDAD, ruta
 
 
 def exigir(condicion, mensaje):
@@ -51,10 +51,6 @@ def leer_raw(nombre):
     df=pd.read_csv(RAW/cfg['archivo'], dtype='string', keep_default_na=False, na_filter=False)
     esquema(df,cfg['columnas'])
     return df
-
-
-def ruta(nombre, etapa):
-    return PROCESSED/nombre/f'{etapa}.csv'
 
 
 def guardar(df,nombre,etapa):
@@ -109,3 +105,63 @@ def fecha(s,nombre):
 
 def incidencia(nombre,df):
     guardar(df,nombre,'incidencias')
+
+
+def filas_origen(df, fuente, columnas_clave):
+    """Recupera la fila CSV original por clave sin alterar las columnas finales."""
+    original = leer(fuente, '01_ingesta')
+    clave(original, columnas_clave, f'{fuente}: traza de origen')
+    indices = original[columnas_clave].copy()
+    indices['fila_csv'] = range(2, len(original) + 2)
+    traza = df[columnas_clave].merge(indices, on=columnas_clave, how='left', validate='one_to_one', sort=False)
+    exigir(traza['fila_csv'].notna().all(), 'No se pudo identificar la fila CSV original')
+    return pd.Series(traza['fila_csv'].to_numpy(), index=df.index)
+
+
+def registrar_cantidad(incidencias, fila, columna, original, motivo, clasificacion='rechazado_por_invalido'):
+    incidencias.append({
+        'fila_csv': int(fila), 'columna': columna,
+        'valor_original': '' if pd.isna(original) else str(original),
+        'valor_normalizado': NULO_CSV, 'motivo': motivo, 'clasificacion': clasificacion,
+    })
+
+
+def limpiar_cantidad(s, nombre, incidencias, origen, minimo=0, maximo=None, entera=False):
+    """Conserva precision y filas; rechaza cantidades invalidas a nulo con evidencia."""
+    texto = nulos(s)
+    valores = []
+    for indice, valor in texto.items():
+        motivo = None
+        clasificacion = 'rechazado_por_invalido'
+        numero = None
+        if pd.isna(valor):
+            motivo = 'ausente_en_origen'
+            clasificacion = 'ausente_en_origen'
+        else:
+            try:
+                numero = Decimal(str(valor))
+            except InvalidOperation:
+                motivo = 'no_numerico'
+            if numero is not None:
+                if not numero.is_finite():
+                    motivo = 'no_finito'
+                elif minimo is not None and numero < Decimal(str(minimo)):
+                    motivo = 'fuera_de_rango'
+                elif maximo is not None and numero > Decimal(str(maximo)):
+                    motivo = 'fuera_de_rango'
+                elif entera and numero != numero.to_integral_value():
+                    motivo = 'cantidad_fraccionaria'
+                elif entera and numero > Decimal(2**63 - 1):
+                    motivo = 'fuera_de_rango_entero'
+        if motivo:
+            valores.append(pd.NA)
+            registrar_cantidad(incidencias, origen.loc[indice], nombre, s.loc[indice], motivo, clasificacion)
+        else:
+            valores.append(int(numero) if entera else str(valor))
+    return pd.Series(valores, index=s.index, dtype='Int64' if entera else 'string')
+
+
+def guardar_incidencias_cantidad(nombre, registros):
+    """Escribe incluso un informe vacio, sin arrastrar incidencias de otra ejecucion."""
+    evidencia = pd.DataFrame(registros, columns=COLUMNAS_INCIDENCIAS_CANTIDAD)
+    guardar(evidencia, nombre, 'incidencias_tipado')

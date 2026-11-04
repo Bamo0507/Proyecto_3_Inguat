@@ -35,3 +35,30 @@ MUNICIPIOS = {'Panajachel','San Pedro La Laguna','Santiago Atitlan','San Juan La
 MESES = {1:'Ene',2:'Feb',3:'Mar',4:'Abr',5:'May',6:'Jun',7:'Jul',8:'Ago',9:'Sep',10:'Oct',11:'Nov',12:'Dic'}
 TIPOS_ALOJAMIENTO = {'Hospedaje','Hotel','Pensión'}
 VIAS = {**{'01':'Aérea','02':'Aérea'}, **{f'{i:02}':'Marítima' for i in range(3,7)}, **{f'{i:02}':'Terrestre' for i in range(7,23)}}
+
+# Contratos intermedios: cada etapa valida lo que recibe y lo que entrega.
+COLUMNAS_ETAPA = {}
+for _nombre, _fuente in FUENTES.items():
+    _columnas = list(_fuente['columnas'])
+    _contratos = {'01_ingesta': _columnas}
+    _seleccion = [c for c in _columnas if c != 'sub_grupo'] if _nombre.startswith('movilidad') else list(_columnas)
+    _contratos['02_seleccion'] = _seleccion
+    if _nombre in {'movilidad_mensual', 'movilidad_diaria', 'migracion'}:
+        _contratos['03_normalizacion'] = _seleccion + (['indice_origen'] if _nombre == 'migracion' else [])
+        _contratos['04_tipado'] = COLUMNAS_SALIDA[_nombre]
+    else:
+        _contratos['03_tipado'] = COLUMNAS_SALIDA[_nombre]
+    if _nombre == 'migracion':
+        _contratos['05_mensual'] = ['fecha', 'viajeros', 'registros', 'conjunto']
+    COLUMNAS_ETAPA[_nombre] = _contratos
+    _fuente['filas_raw'] = {'ocupacion_hotelera': 792, 'oferta_alojamiento': 330}.get(_nombre, _fuente['filas'])
+del _nombre, _fuente, _columnas, _contratos, _seleccion
+
+COLUMNAS_INCIDENCIAS_CANTIDAD = [
+    'fila_csv', 'columna', 'valor_original', 'valor_normalizado', 'motivo', 'clasificacion'
+]
+
+
+def ruta(nombre, etapa):
+    """Ruta unica de cada tabla procesada, incluidos informes de incidencias."""
+    return PROCESSED / nombre / f'{etapa}.csv'
