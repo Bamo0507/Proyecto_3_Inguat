@@ -26,6 +26,7 @@ python3.13 -m venv .venv
 .venv/bin/python src/run_pipeline.py migracion
 .venv/bin/python src/run_pipeline.py ocupacion_hotelera
 .venv/bin/python src/run_pipeline.py oferta_alojamiento
+.venv/bin/python src/run_pipeline.py dinamica_temporal
 ```
 
 Se puede ejecutar una etapa concreta desde la raíz, una vez que exista su entrada anterior:
@@ -35,6 +36,8 @@ Se puede ejecutar una etapa concreta desde la raíz, una vez que exista su entra
 ```
 
 El orden es `01_ingesta`, `02_seleccion`, `03_normalizacion` (si corresponde), `03_tipado` o `04_tipado`, y `05_mensual` solo para migración. Cada etapa valida su entrada y su salida; una discrepancia detiene el proceso. Los CSV numerados son intermediarios auditables. Las tablas sin número son las salidas finales descritas en [codebook.md](codebook.md). `informe_ejecucion.json` guarda la huella SHA-256 de la fuente y los archivos generados. `migracion/01_notas.csv` conserva la hoja de notas con números de fila Excel. `migracion/incidencias.csv` conserva correcciones y colisiones con fila Excel; `migracion/mapa_paises.csv` registra 13 equivalencias de escritura.
+
+La etapa `dinamica_temporal` lee la movilidad mensual y la migración ya procesadas. Genera `serie_municipal_mensual.csv` y `validacion_municipal.csv` en `data/processed/dinamica_temporal/`. La ejecución completa la incluye después de procesar las fuentes. Para ejecutarla por separado, primero deben existir las salidas de `movilidad_mensual` y `migracion`.
 
 Los CSV usan UTF-8, coma como separador, punto decimal y `\N` como nulo. Las fechas se escriben `AAAA-MM-DD`; las fechas originales de movilidad incluyen `HH:MM:SS`. La ingesta conserva texto y marcadores originales; la normalización interpreta ausencias. Los valores numéricos se validan con `Decimal` y se escriben sin redondeo. Una celda con cero es un cero observado; una fila ausente no se fabrica. La serie mensual de migración sí tiene una rejilla explícita y deja `\N` en meses sin registros.
 

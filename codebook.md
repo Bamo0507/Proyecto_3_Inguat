@@ -107,3 +107,28 @@ Ambas fuentes generan `incidencias_tipado.csv`. En los datos actuales, los infor
 | `clasificacion` | Ausencia en origen, rechazo por invalidez o dato que requiere revision. |
 
 En oferta, una cantidad no numerica, no finita, negativa o fraccionaria pasa a nulo, conservando la observacion. Las incoherencias entre habitaciones, establecimientos y plazas se registran para revision y conservan sus cantidades. No se inventa el valor que resolveria la discrepancia. Este tratamiento no modifica anio, trimestre ni claves: un error en esos identificadores impide certificar la salida.
+
+## Dinámica temporal municipal
+
+La etapa de series municipales usa `movilidad_mensual_atitlan.csv` y `migracion_mensual.csv`. Agrupa por mes, municipio y origen identificado. Cada regresión usa el mes calendario y la migración observada, con ocho meses coincidentes de ajuste para las estimaciones. Los registros sin país quedan fuera de ambos grupos.
+
+`dinamica_temporal/serie_municipal_mensual.csv` contiene 240 filas, con 200 observaciones y 40 estimaciones. Su clave es `fecha, municipio, origen`.
+
+| Columna | Tipo y unidad | Regla |
+|---|---|---|
+| `fecha` | fecha mensual `AAAA-MM-DD` | Primer día de cada mes de septiembre de 2025 a agosto de 2026. |
+| `municipio` | texto | Nombre del destino en la movilidad mensual. |
+| `origen` | texto | `Nacionales` o `Extranjeros`. |
+| `visitantes` | decimal, visitantes por mes | Cantidad agregada o estimada, con precisión de cálculo. |
+| `tipo_dato` | texto | `Estimado` en enero y febrero de 2026 y `Observado` en los demás meses. |
+
+`dinamica_temporal/validacion_municipal.csv` contiene 20 filas. Su clave es `municipio, origen`.
+
+| Columna | Tipo y unidad | Regla |
+|---|---|---|
+| `municipio`, `origen` | texto | Mismos valores que en la serie mensual. |
+| `inicio_validacion`, `fin_validacion` | fecha mensual `AAAA-MM-DD` | Mayo y junio de 2026, respectivamente. |
+| `meses_ajuste`, `meses_validacion` | entero, meses | Seis meses de ajuste y dos de validación. |
+| `mae`, `rmse` | decimal, visitantes por mes | Errores de la regresión con tiempo y migración en la partición de validación. |
+
+Los errores corresponden a los meses reservados de la prueba exploratoria previa al reajuste final. Las estimaciones de enero y febrero carecen de valores observados para medir su error directo.

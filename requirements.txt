@@ -4,3 +4,7 @@ ipykernel==6.29.5
 numpy
 matplotlib
 statsmodels
+lightgbm==4.7.0
+scikit-learn==1.9.1
+torch==2.15.0
+chronos-forecasting==2.3.2
