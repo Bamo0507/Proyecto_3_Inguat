@@ -14,13 +14,15 @@ type IndicadorProps = {
   decimales?: number;
   comparacion?: { variacion: number; etiqueta: string };
   cargando?: boolean;
+  textoSinDatos?: string;
+  mensajeSinDatos?: string;
 };
 
-export function Indicador({ etiqueta, icono: IconoIndicador, valor, unidad, periodo, descripcion, formato = "numero", decimales = 0, comparacion, cargando = false }: IndicadorProps) {
+export function Indicador({ etiqueta, icono: IconoIndicador, valor, unidad, periodo, descripcion, formato = "numero", decimales = 0, comparacion, cargando = false, textoSinDatos = "Sin datos", mensajeSinDatos = "Sin información disponible para este período" }: IndicadorProps) {
   const disponible = valor !== null && Number.isFinite(valor);
   const valorFormateado = disponible
     ? formato === "porcentaje" ? formatearPorcentaje(valor, decimales) : formatearNumero(valor, decimales)
-    : "Sin datos";
+    : textoSinDatos;
   const tieneComparacion = disponible && comparacion && Number.isFinite(comparacion.variacion);
   const Icono = comparacion && comparacion.variacion > 0 ? ArrowUpRight : comparacion && comparacion.variacion < 0 ? ArrowDownRight : Minus;
 
@@ -48,7 +50,7 @@ export function Indicador({ etiqueta, icono: IconoIndicador, valor, unidad, peri
               <Icono aria-hidden="true" className="size-3.5" />
               {comparacion.variacion > 0 ? "+" : ""}{formatearPorcentaje(comparacion.variacion)}
             </span>}
-            {cargando ? <Skeleton className="h-4 w-48 max-w-full" /> : !disponible ? "Sin información disponible para este período" : tieneComparacion ? comparacion.etiqueta : descripcion}
+            {cargando ? <Skeleton className="h-4 w-48 max-w-full" /> : !disponible ? mensajeSinDatos : tieneComparacion ? comparacion.etiqueta : descripcion}
           </div>
       </CardContent>
     </Card>
