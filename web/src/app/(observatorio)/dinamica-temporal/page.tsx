@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { connection } from "next/server";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { PaginaModulo } from "@/components/pagina-modulo";
 import { DinamicaTemporal } from "@/features/dinamica-temporal/components/dinamica-temporal";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
+  await connection();
   const municipios = await cargarDinamicaTemporal().catch((error: unknown) => {
     console.error("Dinámica temporal", error);
     return null;

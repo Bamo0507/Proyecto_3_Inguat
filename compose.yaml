@@ -1,0 +1,19 @@
+services:
+  dashboard:
+    build:
+      context: ./web
+    ports:
+      - "127.0.0.1:${DASHBOARD_PORT:-8088}:3000"
+    volumes:
+      - type: bind
+        source: ./data/processed
+        target: /app/data/processed
+        read_only: true
+        bind:
+          create_host_path: false
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/icon.svg').then(r => { if (!r.ok) process.exit(1) }, () => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s

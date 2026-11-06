@@ -41,6 +41,21 @@ La etapa `dinamica_temporal` lee la movilidad mensual y la migración ya procesa
 
 Los CSV usan UTF-8, coma como separador, punto decimal y `\N` como nulo. Las fechas se escriben `AAAA-MM-DD`; las fechas originales de movilidad incluyen `HH:MM:SS`. La ingesta conserva texto y marcadores originales; la normalización interpreta ausencias. Los valores numéricos se validan con `Decimal` y se escriben sin redondeo. Una celda con cero es un cero observado; una fila ausente no se fabrica. La serie mensual de migración sí tiene una rejilla explícita y deja `\N` en meses sin registros.
 
+## Dashboard con Docker
+
+Con Docker y Docker Compose v2 instalados, ejecuta desde la raíz:
+
+```bash
+.venv/bin/python src/run_pipeline.py
+docker compose up --build -d --wait
+```
+
+Si ya generaste los CSV, puedes empezar con el segundo comando. Abre [el dashboard](http://127.0.0.1:8088). Usa `DASHBOARD_PORT=8089 docker compose up --build -d --wait` para cambiar el puerto local.
+
+El contenedor lee `data/processed/` mediante un montaje de solo lectura. La imagen contiene la aplicación web y sus dependencias de producción. Los CSV se leen al abrir el dashboard, por lo que puedes regenerarlos con el pipeline sin reconstruir la imagen.
+
+Para detener el dashboard, ejecuta `docker compose down`.
+
 ## Organizacion por etapas
 
 Cada archivo numerado contiene la transformacion de su fuente. `run_pipeline.py` solo ejecuta esas etapas en orden y se detiene ante un error de contrato; `config.py` concentra rutas y esquemas, y `utils.py` comparte lectura, escritura y validaciones.

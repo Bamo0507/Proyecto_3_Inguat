@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { connection } from "next/server";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { PaginaModulo } from "@/components/pagina-modulo";
 import { VistaDemanda } from "@/features/demanda/vista-demanda";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
+  await connection();
   let datos: DatosDemanda | null = null;
   try {
     datos = await cargarDatosDemanda();
