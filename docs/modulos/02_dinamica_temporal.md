@@ -1,6 +1,6 @@
 # **2. Modulo 2: Dinamica temporal, eventos y estimaciones**
 
-**Estado:** alcance funcional aprobado tras la revision conjunta. El metodo, las estimaciones y su validacion corresponden al analisis posterior; las vistas todavia no estan implementadas.
+**Estado.** Las vistas del módulo están implementadas. La comparación diaria usa los días regulares del mismo mes, municipio y procedencia. La serie mensual incorpora las estimaciones de enero y febrero de 2026 y el error de validación de mayo y junio de 2026.
 
 **Lenguaje de la interfaz:** las preguntas de las tablas y de cada grafico son textos para el lector y usan lenguaje natural y ortografia completa. El titulo formula una pregunta concreta; municipio, fechas, unidad y base de comparacion se indican junto a la vista. Los terminos tecnicos necesarios se explican brevemente y las formulas se conservan en la documentacion metodologica. La redaccion sencilla no cambia la medida ni permite afirmar mas de lo que muestran los datos.
 
@@ -24,7 +24,7 @@ Guia principal: `Guia_Proyecto_Observatorio_Turistico_UVG (1).pdf`, pagina 3. Re
 | Estimacion obligatoria de enero-febrero de 2026 | ¿Cuántas visitas estimamos para enero y febrero de 2026? | Serie mensual observada con los dos meses estimados diferenciados |
 | Validacion contra meses observados | ¿Cuánto se equivoca, en promedio, nuestra estimación? | MAE visible, con meses de validacion y unidad |
 
-La propuesta contiene tres graficos principales. El Lift y la validacion son lecturas asociadas a los graficos pertinentes, no motivos para agregar visualizaciones decorativas.
+La interfaz contiene dos gráficos diarios y un gráfico mensual que responde a la procedencia seleccionada. El Lift y la validacion son lecturas asociadas a los graficos pertinentes, no motivos para agregar visualizaciones decorativas.
 
 ## **2.3. Fuentes y disponibilidad comprobada**
 
@@ -34,6 +34,8 @@ La propuesta contiene tres graficos principales. El Lift y la validacion son lec
 | `data/processed/movilidad_mensual/movilidad_mensual_atitlan.csv` | Objetivo mensual de visitantes y validacion municipal |
 | `data/processed/migracion/migracion_mensual.csv` | Referencia estacional de ingresos al pais |
 | `data/processed/migracion/migracion_detalle.csv` | Consulta por mercado cuando sea necesaria para justificar la referencia estacional |
+| `data/processed/dinamica_temporal/serie_municipal_mensual.csv` | Serie observada y estimada que se muestra en el módulo |
+| `data/processed/dinamica_temporal/validacion_municipal.csv` | Error absoluto medio por municipio y procedencia |
 
 La base diaria tiene diez meses completos: septiembre-diciembre de 2025 y marzo-agosto de 2026. Ademas tiene ventanas parciales en abril y junio de 2025 y septiembre de 2026. La comprobacion de fechas del archivo completo encontro que esas tres ventanas parciales no incluyen dias etiquetados `Regular`; la cobertura se volvera a comprobar para cada municipio y procedencia antes de calcular.
 
@@ -46,7 +48,7 @@ Las fechas y los municipios deben relacionarse por dimensiones comunes. La escri
 | Control | Alcance | Comportamiento |
 |---|---|---|
 | Municipio | Todo el modulo | Actualiza las vistas y selecciona la estimacion y validacion de ese municipio |
-| Nacionales / extranjeros | Todo el modulo | Trabaja un universo por vez, con cantidades y modelos separados |
+| Nacionales / extranjeros | Todo el módulo | Selecciona la procedencia de la vista diaria, del patrón semanal y de la serie mensual |
 | Mes y anio | Bloque diario y semanal | Muestra los dias observados del mes, su cobertura y el patron semanal correspondiente |
 | Evento | Local a la linea diaria y su Lift | Resalta los dias del evento en el mes; conserva los dias de contexto para comparar |
 
@@ -54,7 +56,7 @@ El bloque de estimacion mensual conserva su ventana completa, con enero-febrero 
 
 El selector de evento solo ofrece etiquetas presentes en la seleccion. Si no hay festividades, la serie sigue siendo util y se informa que no hay un evento registrado para comparar. Seleccionar una festividad no filtra silenciosamente la base de dias regulares ni cambia el grafico semanal para que represente solo esa fiesta.
 
-No se agregan filtros por pais, semana ISO, rango diario libre ni algoritmo en esta primera version. Los controles locales deben estar dentro del bloque al que afectan.
+No se agregan filtros por pais, semana ISO, rango diario libre ni algoritmo en esta primera version. Los filtros de municipio, mes y evento permiten buscar entre sus opciones. Mes y evento se ubican junto a la vista diaria.
 
 ## **2.5. Graficos y medidas**
 
@@ -135,6 +137,4 @@ Pregunta: "¿Cuánto se equivoca, en promedio, nuestra estimación?". La vista i
 
 ## **2.7. Resultado de la propuesta**
 
-Los tres graficos cubren las preguntas exigidas por el modulo, acompanados del Lift y del error de validacion. La interfaz puede definirse ahora; los resultados del modelo y la validez de cada referencia de evento solo se confirmaran tras el analisis.
-
-El alcance se aprobo como conjunto. La seleccion final del metodo y del protocolo de validacion es trabajo analitico posterior, no una afirmacion de que ya existe un modelo validado.
+Los gráficos diarios y la serie mensual de la procedencia seleccionada cubren las preguntas del módulo. La variación de cada evento se muestra cuando hay una referencia regular comparable. La regresión lineal usa el mes y los ingresos migratorios para estimar los dos meses faltantes. El error se informa por municipio y procedencia con los dos meses observados que se reservaron para la validación.

@@ -12,6 +12,7 @@ import type { EstadoVisual } from "../types/graficos";
 
 type PanelGraficoProps = {
   titulo: string;
+  nivelTitulo?: "h2" | "h3";
   descripcion?: string;
   acciones?: ReactNode;
   pie?: ReactNode;
@@ -22,12 +23,12 @@ type PanelGraficoProps = {
   className?: string;
 };
 
-export function PanelGrafico({ titulo, descripcion, acciones, pie, children, estado = "listo", mensajeError = "No fue posible cargar esta visualización.", onReintentar, className }: PanelGraficoProps) {
+export function PanelGrafico({ titulo, nivelTitulo: Titulo = "h2", descripcion, acciones, pie, children, estado = "listo", mensajeError = "No fue posible cargar esta visualización.", onReintentar, className }: PanelGraficoProps) {
   const id = useId();
   return (
     <Card className={cn("min-w-0", className)} role="region" aria-labelledby={id} aria-busy={estado === "cargando"}>
       <CardHeader className="gap-y-2">
-        <CardTitle><h2 id={id}>{titulo}</h2></CardTitle>
+        <CardTitle><Titulo id={id}>{titulo}</Titulo></CardTitle>
         {descripcion && <CardDescription>{descripcion}</CardDescription>}
         {acciones && <CardAction>{acciones}</CardAction>}
       </CardHeader>
